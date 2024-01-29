@@ -13,7 +13,7 @@ server_config=\
 frontend  promise-frontend
         bind *:80
         mode http
-        default_backend whistler-backend
+        default_backend promise-backend
 backend promise-backend
         balance roundrobin
         server 402038-web-01 54.145.85.37:80 check
